@@ -1,0 +1,64 @@
+# ========== 课题：训练产物与权重（体积大，勿提交）==========
+# MMSeg 实验默认 work_dir；内含 best_*.pth、.log、vis_data、曲线等
+MambaVision-main/semantic_segmentation/checkpoint/
+**/semantic_segmentation/checkpoint/
+
+# 官方 / 本地 work_dirs（若在其他子目录生成）
+**/work_dirs/
+**/work_dirs/**
+
+# 权重与压缩包（含预训练 .pth.tar）
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+*.safetensors
+
+# ========== Python ==========
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+
+# ========== 数据（若拷贝进本仓库目录则忽略；勿外传）==========
+DataA-B/
+**/DataA-B/
+data/
+datasets/
+
+# ========== 日志与临时文件 ==========
+*.log
+*.tmp
+*.partial
+*.swp
+*~
+
+# 旧脚本可能生成的 tools 下日志目录
+MambaVision-main/semantic_segmentation/tools/logs/
+**/tools/logs/
+
+# ========== IDE / 系统 ==========
+.idea/
+.vscode/
+*.sublime-*
+.DS_Store
+Thumbs.db
+
+# ========== Jupyter ==========
+.ipynb_checkpoints/
+
+# ========== 嵌套 Git（备忘）==========
+# 若当前仓库根是「外层」`.../MambaVision-main/`，且子目录 `MambaVision-main/.git`
+# 还存在另一份仓库，推 GitHub 前建议只保留一层：备份后删掉子目录里的 `.git`。
